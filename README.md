@@ -1,90 +1,104 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+📌 MyPortfolio Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+A responsive, multi-page portfolio website built using HTML5, CSS3, and Vanilla JavaScript.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+This project demonstrates semantic HTML, modern CSS layouts (Flexbox & Grid), and interactive JavaScript features such as form validation, testimonial carousel, dark mode toggle, and project filtering.
 
----
+🚀 Features
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+✅ Responsive Layout – Works on desktop, tablet, and mobile
 
-Before you write any code, take time to plan:
+✅ Semantic HTML5 structure – Accessible and SEO-friendly
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+✅ Gradient navigation & hero sections – Modern design with blended color scheme
 
-**Goal:** Show intentional structure and user journey across the site.
+✅ Portfolio grid – Showcases projects using responsive cards
 
----
+✅ Project filtering – Filter portfolio items by category with a click
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+✅ Dark mode toggle – Switch between light and dark themes
 
-Using your plan, begin building:
+✅ Testimonial carousel – Auto-sliding client feedback built with Vanilla JS
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+✅ Custom form validation – HTML5 + JavaScript validation with helpful error messages
 
-Each page should:
+✅ Pure Vanilla Stack – No frameworks, no external dependencies
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+📂 Project Structure
+project-root/
+│
+├── index.html        # Homepage
+├── about.html        # About page
+├── portfolio.html    # Portfolio/Services page
+├── contact.html      # Contact page
+│
+├── css/              # Stylesheets
+│   ├── base.css      # Base styles (typography, reset, buttons)
+│   └── layout.css    # Layout styles (grid, nav, footer, responsive design)
+│
+├── js/               # JavaScript files
+│   ├── main.js       # Navigation toggle, dark mode, carousel, filtering
+│   └── form.js       # Custom form validation
+│
+├── images/           # Images (logo, profile, projects, testimonials)
+│   ├── hero-bg.jpg
+│   ├── profile.jpg
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   ├── project3.jpg
+│   ├── testimonial1.jpg
+│   ├── testimonial2.jpg
+│   └── testimonial3.jpg
+│
+├── .gitignore        # Ignore unnecessary files
+└── README.md         # Project documentation
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+⚙️ How to Run
 
----
+Clone or download this repository:
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+git clone https://github.com/PBB-JEF/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
 
-Before deployment, refactor your project to follow production-friendly practices:
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+Open the project folder and launch index.html in your browser.
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Simply double-click index.html, or
 
----
+Use a local server (e.g., VS Code Live Server extension).
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+📱 Responsiveness
 
-Once your project is complete, choose a method to **host your site online**.
+Mobile (≤ 768px): Collapsible navigation, single-column layouts.
 
-You can use:
+Tablet (768px – 1024px): Two-column grids.
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+Desktop (≥ 1024px): Multi-column grids, full navigation bar.
 
-Deploy your project and confirm that:
+🛠️ Technologies Used
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+HTML5 – Semantic structure and accessibility
 
-**Goal:** Publish your work online and make it accessible to the world.
+CSS3 – Flexbox, Grid, gradients, responsive design, and transitions
 
----
+JavaScript (Vanilla) – DOM manipulation, events, validation, filtering, dark mode
 
-## Deliverables
 
-1. A GitHub repository containing:
+🔹 Deliverables
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+Live Website URL (deployed)
 
----
 
-## Outcome
+GitHub Repo Link (organized project code) - https://github.com/PBB-JEF/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Pitch Deck PDF/Slides - https://www.canva.com/design/DAGzYt17nbk/NRux4QUvIHCo-zmSdtbWXA/edit?utm_content=DAGzYt17nbk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+3. Deployment
+
+Options:
+
+Netlify (easy: drag & drop or GitHub deploy)
+
+Vercel (connect GitHub repo)
+
+GitHub Pages (host directly from repo)

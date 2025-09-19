@@ -1,0 +1,151 @@
+/* ================================
+   LAYOUT & COMPONENT STYLING
+   ================================ */
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2em 0;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  padding: 1em 0;
+  color: #fff;
+}
+.site-header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+.main-nav ul {
+  display: flex;
+  gap: 1.2em;
+}
+.main-nav a {
+  color: #fff;
+  font-weight: 500;
+}
+.main-nav a.active {
+  text-decoration: underline;
+}
+
+/* Dark toggle */
+#dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  margin-right: 1em;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 5em 1em;
+  background-size: cover;
+  background-position: center;
+}
+.hero h1 span {
+  color: var(--color-secondary);
+}
+.hero .btn {
+  margin-top: 1em;
+}
+
+/* Cards & Grid */
+.grid {
+  display: grid;
+  gap: 1.5em;
+}
+.portfolio-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: var(--color-card);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Filters */
+.filters {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.filter-btn {
+  margin: 0 0.5em;
+}
+.filter-btn.active {
+  background: var(--color-secondary);
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.carousel .slide.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Contact form */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+#form-msg {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: 3em;
+  background: var(--color-card);
+  border-top: 2px solid #ddd;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .flex-between {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 3em 1em;
+  }
+}
+
+
+

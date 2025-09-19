@@ -1,0 +1,125 @@
+/* ================================
+   BASE STYLES & VARIABLES
+   ================================ */
+:root {
+  --font-main: "Segoe UI", Arial, sans-serif;
+
+  /* Light mode */
+  --color-bg: #ffffff;
+  --color-text: #222;
+  --color-primary: #0077ff;
+  --color-secondary: #ff6a00;
+  --color-card: #f7f7f7;
+
+  /* Dark mode */
+  --dark-bg: #121212;
+  --dark-text: #f1f1f1;
+  --dark-card: #1e1e1e;
+}
+
+/* Dark Mode toggle */
+body.dark-mode {
+  --color-bg: var(--dark-bg);
+  --color-text: var(--dark-text);
+  --color-card: var(--dark-card);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Clear box model */
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+p, ul, li {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button, .btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: var(--color-secondary);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+/* Accessibility */
+:focus {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.2s ease both;
+}
+.slide-up {
+  animation: slideUp 1s ease both;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+

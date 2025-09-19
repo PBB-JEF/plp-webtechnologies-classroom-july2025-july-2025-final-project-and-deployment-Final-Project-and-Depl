@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page with form validation.">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">MyPortfolio</a>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container slide-up">
+    <h1>Contact Me</h1>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <div id="form-msg"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 MyPortfolio</p>
+  </footer>
+  <script src="js/form.js" defer></script>
+</body>
+</html>
+
+
+
+
