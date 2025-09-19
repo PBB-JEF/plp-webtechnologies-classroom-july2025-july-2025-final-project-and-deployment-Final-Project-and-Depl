@@ -85,7 +85,7 @@ JavaScript (Vanilla) – DOM manipulation, events, validation, filtering, dark m
 
 🔹 Deliverables
 
-Live Website URL (deployed)
+Live Website URL (deployed) - moonlit-blini-358e4a.netlify.app
 
 
 GitHub Repo Link (organized project code) - https://github.com/PBB-JEF/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
